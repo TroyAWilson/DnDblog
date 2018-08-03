@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin:0;
+  /* font-family: 'Do Hyeon', sans-serif; */
+  font-family: 'Acme', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.main-container{
+  display:flex;
+  flex-direction: column;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  margin:  0 25px;
+  border-bottom: lightgrey 1px solid;
+}
+.header-container ul{
+  list-style: none;
+  display: flex;
+}
+.header-container li{
+  margin: 0 25px;
+}
+.header-container li:hover{
+  cursor:pointer;
+}
+.main-nav{
+  border-bottom: lightgrey 1px solid;
+
+}
+.main-nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav li{
+margin: 0 100px;
+transition: .3 ease-out;
+}
+.main-nav li:hover{
+  cursor: pointer;
+  color: purple;
+}
+.content-container{
+  display:flex;
+  margin:50px;
+}
+.main-piece{
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.main-piece img{
+  align-self: center;
+  box-shadow: 0px 5px 15px lightgrey;
+}
+.main-piece p {
+  margin: 5px 0;
+}
+.main-piece p::first-letter {
+  margin-left: 25px;
+}
+.main-piece a{
+  color: darkviolet;
+  margin: 25px;
+  align-self: flex-end;
+  border: black 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  transition: .3s ease-out;
+}
+.main-piece a:hover{
+  border: 1px solid darkviolet;
+}
+.begin-post::first-letter{
+  font-size: 2em;
+}
+.side-column{
+  max-width: 20%;
+  padding: 50px;
+  border-left: lightgrey 1px solid;
+  padding-top:25px;
+}
+#main-footer{
+  border-top: lightgrey 1px solid;
+  display:flex;
+  flex-direction: column;
+}
+#main-footer ul{
+  list-style: none;
+  display: flex;
+  margin:auto;
+}
+#main-footer li{
+  margin:5px;
+  padding: 5px;
+}
+#main-footer p{
+  align-self: center;
+  margin: 1px;
+}
+#main-footer a {
+  color: darkviolet;
+}
