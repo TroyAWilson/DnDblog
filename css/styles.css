@@ -33,7 +33,7 @@ header{font-size: 1.4em;}
   align-items: center;
 }
 .header-container img{
-  max-width: 60%;
+  max-width: 90%;
 }
 .header-container li{
   text-align: center;
@@ -72,6 +72,14 @@ transition: .3 ease-out;
   display: flex;
   flex-direction: column;
 }
+@media(min-width:750px){
+  .main-piece{
+    flex-direction: row;
+  }
+  .reverse{
+    flex-direction: row-reverse;
+  }
+}
 .content-text{
   margin:50px;
   border-bottom: 2px solid #6A96BA;
@@ -99,9 +107,6 @@ transition: .3 ease-out;
 }
 .begin-post::first-letter{
   font-size: 2em;
-}
-.reverse{
-  /* flex-direction: row-reverse; */
 }
 #main-footer{
   font-size: 1.5em;
