@@ -1,3 +1,5 @@
+/* #D8FFFE */
+/* #6A96BA */
 *{
   box-sizing: border-box;
 }
@@ -13,42 +15,53 @@ h1,h2,h3,h4,h5,h6{
 a{
   text-decoration: none;
 }
+header{font-size: 1.4em;}
 .main-container{
   display:flex;
   flex-direction: column;
 }
 .header-container{
+  background-color: #D8FFFE;
   display: flex;
   justify-content: space-between;
-  margin:  0 25px;
   border-bottom: lightgrey 1px solid;
 }
 .header-container ul{
   list-style: none;
   display: flex;
+  margin:auto;
+  align-items: center;
+}
+.header-container img{
+  max-width: 60%;
 }
 .header-container li{
+  text-align: center;
   margin: 0 25px;
 }
 .header-container li:hover{
   cursor:pointer;
+  color:#6A96BA;
 }
 .main-nav{
+  background-color: #6A96BA;
   border-bottom: lightgrey 1px solid;
 
 }
 .main-nav ul{
+  margin:0;
+  padding:10px;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 .main-nav li{
-margin: 0 100px;
+  margin:15px 50px;
 transition: .3 ease-out;
 }
 .main-nav li:hover{
   cursor: pointer;
-  color: purple;
+  color: #D8FFFE;
 }
 .content-container{
   display:flex;
@@ -58,6 +71,10 @@ transition: .3 ease-out;
   max-width: 95%;
   display: flex;
   flex-direction: column;
+}
+.content-text{
+  margin:50px;
+  border-bottom: 2px solid #6A96BA;
 }
 .main-piece img{
   align-self: center;
@@ -69,28 +86,26 @@ transition: .3 ease-out;
 .main-piece p::first-letter {
   margin-left: 25px;
 }
-.main-piece a{
-  color: darkviolet;
+.main-piece footer{
+  font-size: 1.5em;
+  color: #6A96BA;
   margin: 25px;
-  align-self: flex-end;
-  border: black 1px solid;
+  float:right;
   border-radius: 5px;
   padding: 5px;
   transition: .3s ease-out;
 }
-.main-piece a:hover{
-  border: 1px solid darkviolet;
+.main-piece footer:hover{
 }
 .begin-post::first-letter{
   font-size: 2em;
 }
-.side-column{
-  max-width: 20%;
-  padding: 50px;
-  border-left: lightgrey 1px solid;
-  padding-top:25px;
+.reverse{
+  /* flex-direction: row-reverse; */
 }
 #main-footer{
+  font-size: 1.5em;
+  background-color: #D8FFFE;
   border-top: lightgrey 1px solid;
   display:flex;
   flex-direction: column;
@@ -109,5 +124,5 @@ transition: .3 ease-out;
   margin: 1px;
 }
 #main-footer a {
-  color: darkviolet;
+  color: #6A96BA;
 }
