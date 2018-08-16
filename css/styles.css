@@ -49,6 +49,10 @@ header{font-size: 1.4em;}
   color:white;
 
 }
+.main-nav a {
+  color:white;
+  transition: .3 ease-out;
+}
 .main-nav ul{
   margin:0;
   padding:10px;
@@ -58,15 +62,18 @@ header{font-size: 1.4em;}
 }
 .main-nav li{
   margin:15px 50px;
-transition: .3 ease-out;
 }
-.main-nav li:hover{
+.main-nav a:hover{
   cursor: pointer;
   color: #D8FFFE;
 }
 .content-container{
   display:flex;
   margin:50px;
+}
+.content-container main{
+  display:flex;
+  flex-wrap: wrap;
 }
 .main-piece{
   padding:25px;
@@ -166,7 +173,7 @@ transition: .3 ease-out;
     display: flex;
   }
   .main-piece{
-    max-width: 30%;
+    max-width: 29%;
   }
   .content-text{
     width:100%;
@@ -191,3 +198,49 @@ transition: .3 ease-out;
     box-shadow: 0px 5px 15px lightgrey;
   }
 }
+/*******************************************************************
+* COS page styles
+********************************************************************/
+.cos-content-container{
+  display:flex;
+  margin:50px;
+}
+.cos-content-container a{
+  color: #6A96BA;
+}
+.cos-article{
+  padding:15px;
+}
+.cos-directory{
+  padding:15px;
+  border-left: 1px solid #6A96BA;
+  width:100%;
+}
+.cos-image{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 75%;
+}
+/*******************************************************************
+* About
+********************************************************************/
+.about-image{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  max-width: 75%;
+  border-radius: 50%;
+  border:3px solid #6A96BA;
+}
+.about-main{
+  display: flex;
+  flex-direction: column;
+  margin:50px;
+}
+.about-content-container{
+  display: flex;
+}
+/*******************************************************************
+* Media Queries
+********************************************************************/
