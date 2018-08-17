@@ -241,6 +241,20 @@ header{font-size: 1.4em;}
 .about-content-container{
   display: flex;
 }
+.wrap{
+  min-height: 100vh;
+}
 /*******************************************************************
-* Media Queries
+* First post
 ********************************************************************/
+.first-post-main-piece{
+  padding:25px;
+  margin:25px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #6A96BA;
+}
+@media(min-width:750px){
+  .first-post-main-piece{
+    flex-direction: row;
+  }
