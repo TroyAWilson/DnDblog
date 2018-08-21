@@ -16,6 +16,11 @@ a{
   text-decoration: none;
 }
 header{font-size: 1.4em;}
+
+.indent::first-letter,
+.begin-post::first-letter{
+margin-left: 50px;
+}
 .main-container{
   display:flex;
   flex-direction: column;
@@ -177,7 +182,7 @@ header{font-size: 1.4em;}
   }
   .content-text{
     width:100%;
-    font-size: .65em;
+    font-size: .7em;
     margin: 0 15px;
   }
   .main-piece img{
@@ -210,7 +215,7 @@ header{font-size: 1.4em;}
 }
 .cos-article,
 .fp-article{
-  padding:15px;
+  padding:0 150px;
 }
 .cos-directory{
   padding:15px;
